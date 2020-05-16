@@ -1,9 +1,13 @@
 import React from 'react';
 import InputTitle from '../1st Level/InputTitle';
-function InputSection() {
+class InputSection  extends React.Component {
 
+    submitPhrase = () => {
+        
+        this.props.submitPhraseFunc(this.state.phrase)}
+render(){
     return (
-        <div >
+        <div>
             <InputTitle />
 
             <div  >
@@ -28,7 +32,7 @@ function InputSection() {
             <div className="col-12 col-md-2">
                 <input className ="field2" type="submit" value="Reverse"
 
-                    // onClick={this.addTask}
+                    onClick={this.submitPhrase}
                 />
 
 
@@ -39,6 +43,6 @@ function InputSection() {
 
 
     );
-}
+}}
 export default InputSection;
 

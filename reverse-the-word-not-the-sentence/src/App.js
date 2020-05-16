@@ -6,17 +6,22 @@ import Explanation from './Components/1st Level/Explanation';
 import InputSection from './Components/2nd level/InputSection';
 
 class App extends React.Component {
-  render(){
-  return (
-    <div className="App">
-     
+  state = {
+    phrase: "lets eat cheese"
+  }
 
-        <Header/>
-        <Explanation/>
-<InputSection/>
-    
-    </div>
-  );
-}}
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Explanation />
+
+        <InputSection submitPhraseFunc={this.submitPhrase} />
+
+      </div>
+    );
+  }
+}
 
 export default App;
