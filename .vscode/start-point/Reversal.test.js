@@ -37,7 +37,7 @@ describe("wordReversal", () => {
         test("join letters in the array back to words ", () => {
             expect(wordReversal.wordBackTogether(["e", "s", "e", "e", "h", "c"])).toBe("eseehc");
             expect(wordReversal.wordBackTogether(["best","the", "is", "cheese"])).toStrictEqual("besttheischeese");
-            expect(wordReversal.wordBackTogether(["e", "s", "e", "e", "h", "c"], ["s", "i"], ["e", "h", "t"], ["t", "s", "e", "b"])).toStrictEqual(["eseehc"], ["si"], ["eht"], ["tseb"]);
+            expect(wordReversal.wordBackTogether(["e", "s", "e", "e", "h", "c"], ["s", "i"], ["e", "h", "t"], ["t", "s", "e", "b"])).toStrictEqual("eseehc", "si", "eht", "tseb");
         });
     });
 });

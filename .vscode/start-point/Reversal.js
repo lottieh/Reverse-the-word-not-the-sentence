@@ -1,4 +1,4 @@
-//const phrases = "cheese is the best"; 
+const phrases = "cheese is the best"; 
 
 //1. Take in a phrase string
 
