@@ -7,12 +7,28 @@ import InputSection from './Components/2nd level/InputSection';
 import OutputSection from './Components/2nd level/OutputSection';
 
 class App extends React.Component {
-  state = {
-    phrases: [
-      { id: 1, description: 'lets eat some cheese'},
-    ]
-  }
+  state = { 'lets eat some cheese' }
+  
+output = (stateDescription) =>
+{ 
+  const input= "ben has gone downstairs"
+  
+  // Split the words in the string into arrays
+  
+  const  arrayWordOutput = input.split(" ");  
+  
+  //Split the letters in the array    
+      const arrayLetterOutput = arrayWordOutput.split("");
+     
+  // Reverse the letter in each individual array 
+       const reversed = arrayLetterOutput.reverse();
+  
 
+  // Join the arrays back together
+       const words = reversed.join("");
+
+  
+}
 
   render() {
     return (
@@ -20,9 +36,12 @@ class App extends React.Component {
         <Header />
         <Explanation />
 
-        <InputSection submitPhraseFunc={this.submitPhrase} />
-        <OutputSection />
-        
+        <InputSection input={this.state.phrases}
+          submitPhraseFunc={this.submitPhrase}
+          outputFunc={this.output} />
+        <OutputSection  input={this.state.phrases}
+            />
+
 
       </div>
     );

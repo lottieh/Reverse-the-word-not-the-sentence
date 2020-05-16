@@ -9,7 +9,8 @@ render(){
     return (
         <div>
             <OutputHeader/>
-            <ActualOutput input={this.state.phrases}/>
+            <ActualOutput /> 
+            
         </div>
 
 

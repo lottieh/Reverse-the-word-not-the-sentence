@@ -2,9 +2,12 @@ import React from 'react';
 import InputTitle from '../1st Level/InputTitle';
 class InputSection  extends React.Component {
 
-    submitPhrase = () => {
-        
-        this.props.submitPhraseFunc(this.state.phrases)}
+    submitClicked = () =>{
+alert('clicked')
+this.props.outputFunc(this.props.description)
+// .split(" ").split("").reverse().join("")
+
+    }
 render(){
     return (
         <div>
@@ -32,7 +35,7 @@ render(){
             <div className="col-12 col-md-2">
                 <input className ="field2" type="submit" value="Reverse"
 
-                    onClick={this.submitPhrase}
+                    onClick={this.submitClicked}
                 />
 
 

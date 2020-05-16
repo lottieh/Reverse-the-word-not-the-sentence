@@ -40,8 +40,8 @@ class ActualOutput extends React.Component {
             <div>
                 <div className=" Bordered ">
                  
-                {this.props.input.description.split(" ").split("").reverse().join("")
-    }
+                {/* {this.props.input.description.split(" ").split("").reverse().join("")
+    } */}
               </div>
 
 
