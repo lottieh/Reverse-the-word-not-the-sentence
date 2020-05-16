@@ -4,10 +4,13 @@ import './App.css';
 import Header from './Components/1st Level/Header';
 import Explanation from './Components/1st Level/Explanation';
 import InputSection from './Components/2nd level/InputSection';
+import OutputSection from './Components/2nd level/OutputSection';
 
 class App extends React.Component {
   state = {
-    phrase: "lets eat cheese"
+    phrases: [
+      { id: 1, description: 'lets eat some cheese'},
+    ]
   }
 
 
@@ -18,6 +21,8 @@ class App extends React.Component {
         <Explanation />
 
         <InputSection submitPhraseFunc={this.submitPhrase} />
+        <OutputSection />
+        
 
       </div>
     );
