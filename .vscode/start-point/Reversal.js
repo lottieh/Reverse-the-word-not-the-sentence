@@ -9,8 +9,16 @@ function splitToArray(phrases) {
 return arrayOutput = phrases.split(" ");  
 }
 
+// split the letters in the array
 
+function splitToArrayWords(phrases) {
+
+    return arrayOutput = phrases.split("");  
+    }
 //3. Reverse the letter in each individual array 
+function reverser(arrayOutput){
+    return arrayOutput.reverse();
+}
 
 //4. Join the arrays back together
 
@@ -20,5 +28,6 @@ return arrayOutput = phrases.split(" ");
 
 
 module.exports = {
-    splitToArray
+    splitToArray,
+    splitToArrayWords
   };
