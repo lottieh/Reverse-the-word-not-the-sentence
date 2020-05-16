@@ -22,6 +22,9 @@ function reverser(arrayLetterOutput){
 }
 
 //5. Join the arrays back together
+function wordBackTogether(reversed){
+    return words = reversed.join("");
+    }
 
 //6. Output the final phrase
 
@@ -31,5 +34,6 @@ function reverser(arrayLetterOutput){
 module.exports = {
     splitToArray,
     splitToArrayWords,
-    reverser
+    reverser,
+    wordBackTogether
   };
