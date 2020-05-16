@@ -4,7 +4,7 @@ class InputSection  extends React.Component {
 
     submitPhrase = () => {
         
-        this.props.submitPhraseFunc(this.state.phrase)}
+        this.props.submitPhraseFunc(this.state.phrases)}
 render(){
     return (
         <div>
