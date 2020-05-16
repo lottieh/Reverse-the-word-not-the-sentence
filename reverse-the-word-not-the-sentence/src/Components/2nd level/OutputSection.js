@@ -9,7 +9,7 @@ render(){
     return (
         <div>
             <OutputHeader/>
-            <ActualOutput/>
+            <ActualOutput input={this.state.phrases}/>
         </div>
 
 
@@ -18,3 +18,4 @@ render(){
 }}
 export default OutputSection;
 
+ 

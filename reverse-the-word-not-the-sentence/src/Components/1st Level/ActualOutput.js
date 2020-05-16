@@ -1,57 +1,56 @@
 import React from 'react';
 
-class ActualOutput  extends React.Component {
+class ActualOutput extends React.Component {
+    // Split the words in the string into arrays
+    // splitToArray(phrases) {
 
-    function splitToArray(phrases) {
+    //     return arrayWordOutput = phrases.split(" ");  
+    //     }
 
-        return arrayWordOutput = phrases.split(" ");  
+    // splitToArray = () => {
+    //    let output=  this.state.description.split(" ").split("").reverse().join("")
+    // }
+    //Split the letters in the array
+
+    splitToArrayWords(arrayWordOutput) {
+
+        let arrayLetterOutput = arrayWordOutput.split("");
+        return arrayLetterOutput; 
+    };
+
+    // Reverse the letter in each individual array 
+
+    reverser(arrayLetterOutput) {
+         let reversed = arrayLetterOutput.reverse();
+    }
+
+    // Join the arrays back together
+    wordBackTogether(reversed) {
+        let words = reversed.join("");
+        this.setState ={ 
+            phrases : words
         }
-        
-        // 3. split the letters in the array
-        
-        function splitToArrayWords(arrayWordOutput) {
-        
-            return arrayLetterOutput = arrayWordOutput.split("");  
-            }
-        //4. Reverse the letter in each individual array 
-        
-        function reverser(arrayLetterOutput){
-            return reversed = arrayLetterOutput.reverse();
-        }
-        
-        //5. Join the arrays back together
-        function wordBackTogether(reversed){
-            return words = reversed.join("");
-   
-render(){
-    return (
-        <div>
-             <div className=" Bordered ">Task 1
-             g
-             dsg
-             sdg
-             sd
-             gs
-             defaultgsd
-             gds
-             dsggsd
-             gd
-             dgs
-             gd
-             gd
-             g
-             dsggsdg
-             gds
-             gdsgds
-             dsggsddggd
+    }
+    
+    // state = {
+
+    // }
+    render() {
+        return (
+            <div>
+                <div className=" Bordered ">
+                 
+                {this.props.input.description.split(" ").split("").reverse().join("")
+    }
               </div>
 
 
-        </div>
+            </div>
 
 
 
-    );
-}}
+        );
+    }
+}
 export default ActualOutput;
 
