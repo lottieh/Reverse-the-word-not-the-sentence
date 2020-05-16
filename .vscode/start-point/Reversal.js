@@ -6,7 +6,7 @@
 
 function splitToArray(phrases) {
 
-arrayOutput = phrases.split(" ");  
+return arrayOutput = phrases.split(" ");  
 }
 
 
