@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Annie%20Use%20Your%20Telescope);
 
-.App{
+.App {
   max-width: 100%;
 }
 
@@ -19,30 +19,45 @@ body {
   width: 90%;
   height: 56px;
   border-radius: 4px;
+  border-style: outset;
   position: relative;
-  background-color:  #272727;
+  background-color: #272727;
   color: #5cdb95;
   transition: 0.3s all;
-   text-align: center;
-}.field:hover {
-  background-color:#5cdb95;
-  color:#272727;
-  box-shadow: 0px 4px 2000px 0px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.field:hover {
+  background-color: #5cdb95;
+  color: #272727;
 }
 
 .field2 {
   width: 20%;
   height: 42px;
   border-radius: 4px;
+  border-style: outset;
   position: relative;
-  background-color:  #272727;
+  background-color: #272727;
   color: #5cdb95;
   transition: 0.3s all;
-   text-align: center;
-}.field2:hover {
-  background-color:#5cdb95;
-  color:#272727;
-  box-shadow: 0px 4px 2000px 0px rgba(218, 33, 33, 0.05);
+  text-align: center;
+}
+.field2:hover {
+  background-color: #5cdb95;
+  color: #272727;
+}
+
+.Bordered {
+  width: 90%;
+  border-radius: 4px;
+  border-style: outset;
+  position: relative;
+  background-color: #272727;
+  color: #5cdb95;
+  text-align: center;
+  margin: auto 60px;
+  float: center;
+  padding: 20px 30px 20px 30px;
 }
 .App-logo {
   height: 40vmin;
