@@ -6,28 +6,30 @@
 
 function splitToArray(phrases) {
 
-return arrayOutput = phrases.split(" ");  
+return arrayWordOutput = phrases.split(" ");  
 }
 
-// split the letters in the array
+// 3. split the letters in the array
 
-function splitToArrayWords(phrases) {
+function splitToArrayWords(arrayWordOutput) {
 
-    return arrayOutput = phrases.split("");  
+    return arrayLetterOutput = arrayWordOutput.split("");  
     }
-//3. Reverse the letter in each individual array 
-function reverser(arrayOutput){
-    return arrayOutput.reverse();
+//4. Reverse the letter in each individual array 
+
+function reverser(arrayLetterOutput){
+    return reversed = arrayLetterOutput.reverse();
 }
 
-//4. Join the arrays back together
+//5. Join the arrays back together
 
-//5. Output the final phrase
+//6. Output the final phrase
 
 
 
 
 module.exports = {
     splitToArray,
-    splitToArrayWords
+    splitToArrayWords,
+    reverser
   };
