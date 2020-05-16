@@ -2,5 +2,11 @@
   "git.ignoreLimitWarning": true,
   "scripts": {
     "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "node": "^14.2.0"
   }
 }
