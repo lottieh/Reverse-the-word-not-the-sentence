@@ -7,20 +7,31 @@ function InputSection() {
             <InputTitle />
 
             <div  >
+                {/*Input Box*/}
 
-                <input
-                    className="field Col-8"
-                    type="text"
-                    // onChange={this.taskDescriptionEntered}
-                    name="task"
-                    placeholder="Enter your phrase here" />
-                <br></br>
-                <small id="taskHelp" className="form-text text-muted">
-                    This must only contain lowercase letters and spaces.
+            </div>
+            <input
+                className="field Col-8"
+                type="text"
+                // onChange={}
+                name="task"
+                placeholder="Enter your phrase here" />
+
+            <br></br>
+
+            <small id="taskHelp" className="form-text text-muted">
+                This must only contain lowercase letters and spaces.
                     </small>
-          
-                    
-          
+
+            {/*Submit button*/}
+
+            <div className="col-12 col-md-2">
+                <input className ="field2" type="submit" value="Reverse"
+
+                    // onClick={this.addTask}
+                />
+
+
             </div>
 
         </div>
