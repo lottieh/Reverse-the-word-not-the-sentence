@@ -1,11 +1,13 @@
-const phrases = "cheese is the best"; 
+//const phrases = "cheese is the best"; 
 
 //1. Take in a phrase string
 
 //2. Split string into array for each word - space as the delimiter
 
-arrayOutput = phrases.split(" ");  
+function splitToArray(phrases) {
 
+arrayOutput = phrases.split(" ");  
+}
 
 
 //3. Reverse the letter in each individual array 
@@ -18,5 +20,5 @@ arrayOutput = phrases.split(" ");
 
 
 module.exports = {
-    arrayOutput
+    splitToArray
   };
