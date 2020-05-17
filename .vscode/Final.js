@@ -7,16 +7,27 @@ let  arrayWordOutput = phrases.split(" ");
 console.log(arrayWordOutput)
 // need to change this to not be an array
 
-// 3. split the letters in the array
-let arrayLetterOutput = arrayWordOutput.split(" ");  
+for (let i = 0; i < arrayWordOutput.length; i++) {
+    arrayWordOutput[i]=arrayWordOutput[i].split("")
+    console.log(arrayWordOutput[i]);
+    reversed = arrayWordOutput[i].reverse();
+    console.log(reversed)
+    words = reversed.join("");
+    console.log(words);
+
+}
+
+
+    // 3. split the letters in the array
+// let arrayLetterOutput = arrayWordOutput.split("");  
     
 //4. Reverse the letter in each individual array 
 
-let reversed = arrayLetterOutput.reverse();
+
 
 
 //5. Join the arrays back together
-let words = reversed.join("");
+
     
 
 //6. Output the final phrase
